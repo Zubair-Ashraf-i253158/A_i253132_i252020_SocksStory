@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SockStory - Socks That Tell a Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='70' font-size='60'%3E🧦%3C/text%3E%3C/svg%3E" alt="SockStory Logo">
+            <span>SockStory</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#login">LOG IN</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <span>🛒</span>
+            <span>👤</span>
+            <span>❤️</span>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-menu">
+            <a href="#home">HOME</a>
+            <a href="#contact">CONTACT US</a>
+            <a href="#login">LOG IN</a>
+            <a href="#products">WHAT DO YOU WANT?</a>
+        </div>
+        <div class="hero-text-right">
+            <div>Express<br>your<br>mood.</div>
+            <div style="margin-top: 30px;">Pick<br>your<br>fabric.</div>
+            <div style="margin-top: 30px;">Walk<br>your<br>story.</div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 250'%3E%3Crect fill='%23f0e6d2' width='300' height='250'/%3E%3Ctext x='150' y='125' text-anchor='middle' font-size='60'%3E🧦%3C/text%3E%3C/svg%3E" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Cozy & Chill</h3>
+                    <p class="product-description">Cotton socks for relaxing weekend</p>
+                    <p class="product-price">PKR 800/-</p>
+                    <button class="add-to-cart" onclick="addToCart('Cozy & Chill')">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 250'%3E%3Crect fill='%23002b36' width='300' height='250'/%3E%3Ctext x='150' y='125' text-anchor='middle' font-size='60'%3E🎮%3C/text%3E%3C/svg%3E" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Gaming & Tech</h3>
+                    <p class="product-description">Bamboo socks that are sustainable</p>
+                    <p class="product-price">PKR 600/-</p>
+                    <button class="add-to-cart" onclick="addToCart('Gaming & Tech')">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 250'%3E%3Crect fill='%238b9d83' width='300' height='250'/%3E%3Ctext x='150' y='125' text-anchor='middle' font-size='60'%3E🏔️%3C/text%3E%3C/svg%3E" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Adventure</h3>
+                    <p class="product-description">Travel ready and defend for self</p>
+                    <p class="product-price">PKR 800/-</p>
+                    <button class="add-to-cart" onclick="addToCart('Adventure')">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Pervaraj Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>info@sockstory.com</p>
+                <p>+92 51 8168640</p>
+                <p>123 Sock Street, Lahore</p>
+                <p>Pakistan</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

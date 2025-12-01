@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SockStory - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo">🧦</div>
+            <div class="site-title">SockStory—Socks That Tell a Story</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <span class="icon">🛒</span>
+            <span class="icon">👤</span>
+            <span class="icon">❤️</span>
+            <span class="icon">🔍</span>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+        <div class="billing-section">
+            <h2 class="section-title">Billing and Shipping Address</h2>
+            
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-input" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-input" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Complete Shipping Address</label>
+                    <input type="text" class="form-input" placeholder="Shipping Address" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Complete Billing Address</label>
+                    <input type="text" class="form-input" placeholder="Billing Address" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="sameAddress">
+                    <label for="sameAddress" class="checkbox-label">Billing & Shipping Address are same</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h2 class="summary-title">Order Summary</h2>
+            
+            <div class="product-item">
+                <img src="adventure.jpg">
+                     alt="Socks" class="product-image">
+                <div class="product-details">
+                    <div class="product-name">SOCKS x 1</div>
+                    <div class="product-price">Price = 800 pkr</div>
+                    <div class="product-price">Discount = 00.00</div>
+                    <div class="product-price">Shipping = 300 pkr</div>
+                </div>
+            </div>
+
+            <div class="summary-row summary-total">
+                <span>Total</span>
+                <span>800 + 300 = 1100 pkr</span>
+            </div>
+
+            <div class="payment-section">
+                <h3 class="form-label">Payment</h3>
+                <div class="payment-option" >Payment through debit/credit card</div>
+                <div class="payment-option" >Payment through easypaisa</div>
+                <div class="payment-option" >Cash on delivery</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>info@sockstory.com</p>
+            <p>+92 3338168650</p>
+            <p>123 Sock Street, Lahore</p>
+            <p>Pakistan</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">📷</div>
+                <div class="social-icon">🐦</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

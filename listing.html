@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo">🧦</div>
+            <div class="site-title">SockStory—Socks That Tell a Story</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <span class="icon">🔍</span>
+            </div>
+            <span class="icon">🛒</span>
+            <span class="icon">👤</span>
+            <span class="icon">❤️</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Express<br>your<br>mood.</h2>
+            <h2>Pick<br>your<br>fabric.</h2>
+            <h2>Walk<br>your<br>story.</h2>
+        </aside>
+
+        <main class="content">
+            <div class="top-controls">
+                <div class="search-text">Search</div>
+                <div class="filter-box">
+                    <h3>Filter by</h3>
+                    <div class="filter-option">Latest to oldest</div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="" alt="">
+                    <img src="adventure.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Adventure</div>
+                        <div class="product-desc"> Travel ready and adventure proof</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 800/-</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Adventure')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="art.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Art & Aesthetic</div>
+                        <div class="product-desc"> Cotton socks for creative souls</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 200/-</span>
+                            <span class="stars">⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="work.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Work & Study</div>
+                        <div class="product-desc">Bamboo blend socks for focus and comfort</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 850/-</span>
+                            <span class="stars">⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="nature.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Nature & Outdoor</div>
+                        <div class="product-desc"> Bamboo blend socks for outdoor</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 500/-</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="gaming.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Gaming & Tech</div>
+                        <div class="product-desc"> wool socks for gamers</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 200/-</span>
+                            <span class="stars">⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="fitness.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Fitness & Active</div>
+                        <div class="product-desc">comfy socks for workout and running</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 1000/-</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="cozy.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Cozy & Chill</div>
+                        <div class="product-desc"> wool socks for relaxing weekends</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 950/-</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Art & Aesthetic')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="festive.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Festive & Fun</div>
+                        <div class="product-desc"> cotton socks for celebration and holiday</div>
+                        <div class="product-bottom">
+                            <span class="price">PKR 350/-</span>
+                            <span class="stars">⭐⭐</span>
+                        </div>
+                        <button class="add-btn" onclick="addToCart('Work & Study')">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>info@sockstory.com</p>
+            <p>+92 51 8168640</p>
+            <p>123 Sock Street, lahore</p>
+            <p>Pakistan</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">📷</div>
+                <div class="social-icon">🐦</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
