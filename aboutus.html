@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SockStory - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #c89696;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            padding: 5px;
+        }
+
+        .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 20px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 150px;
+            padding: 5px;
+        }
+
+        .icon {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .about-section {
+            background: linear-gradient(135deg, #d4a5a5 0%, #c89696 100%);
+            padding: 60px 40px;
+            min-height: 500px;
+        }
+
+        .about-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .story-section, 
+        .mission-section {
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .section-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .impact-section {
+            margin-top: 50px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #b88585;
+            color: white;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: white;
+            color: #b88585;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-section">
+            <div class="logo">🧦</div>
+            <div class="site-title">SockStory—Socks That Tell a Story</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="">
+                <span class="icon">🔍</span>
+            </div>
+            <span class="icon">🛒</span>
+            <span class="icon">👤</span>
+            <span class="icon">❤️</span>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <h1 class="about-title">ABOUT US</h1>
+        
+        <div class="content-wrapper">
+            <div class="story-section">
+                <h2 class="section-title">OUR STORY</h2>
+                <p class="section-text">
+                    SockStory was founded on a passion for creating unique and high quality socks.
+                </p>
+            </div>
+
+            <div class="mission-section">
+                <h2 class="section-title">MISSION STATEMENT</h2>
+                <p class="section-text">
+                    SockStory is dedicated to embracing individuality and promoting comfort and satisfaction.
+                </p>
+            </div>
+
+            <div class="impact-section">
+                <h2 class="section-title">OUR IMPACT</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Unique Designs</div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-number">90%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>info@sockstory.com</p>
+            <p>+92 3338168650</p>
+            <p>123 Sock Street, Lahore</p>
+            <p>Pakistan</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">📷</div>
+                <div class="social-icon">🐦</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
