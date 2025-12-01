@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SockStory - Find Your Perfect Sock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #c89696;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            padding: 5px;
+        }
+
+        .site-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 20px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 120px;
+            padding: 5px;
+        }
+
+        .icon {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .banner {
+            background-color: #a87b7b;
+            text-align: center;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .banner-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .question-group {
+            margin-bottom: 30px;
+        }
+
+        .question-label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            display: block;
+        }
+
+        .dropdown {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #d4d4d4;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        .dropdown:focus {
+            outline: 2px solid #c89696;
+        }
+
+        .submit-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .submit-btn {
+            background-color: #c89696;
+            color: white;
+            border: none;
+            padding: 15px 60px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #b88585;
+        }
+
+        .result-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 30px auto;
+            max-width: 600px;
+            display: none;
+        }
+
+        .result-section.show {
+            display: block;
+        }
+
+        .result-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .result-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #b88585;
+            color: white;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: white;
+            color: #b88585;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo">🧦</div>
+            <div class="site-title">SockStory—Socks That Tell a Story</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="">
+                <span class="icon">🔍</span>
+            </div>
+            <span class="icon">🛒</span>
+            <span class="icon">👤</span>
+            <span class="icon">❤️</span>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-text">Find Your Perfect Sock !!</div>
+    </div>
+
+    <div class="quiz-container">
+        <form id="sockQuiz">
+            <div class="question-group">
+                <label class="question-label">What Your Favorite Color?</label>
+                <select class="dropdown" id="color" required>
+                    <option value="">Select an option</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="multicolor">Multicolor</option>
+                </select>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">What occasion will you wear them for?</label>
+                <select class="dropdown" id="occasion" required>
+                    <option value="">Select an option</option>
+                    <option value="casual">Casual Daily Wear</option>
+                    <option value="work">Work/Office</option>
+                    <option value="sports">Sports/Exercise</option>
+                    <option value="formal">Formal Events</option>
+                    <option value="outdoor">Outdoor Adventure</option>
+                    <option value="relax">Relaxing at Home</option>
+                </select>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">What fabric do you prefer?</label>
+                <select class="dropdown" id="fabric" required>
+                    <option value="">Select an option</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="wool">Wool</option>
+                    <option value="bamboo">Bamboo Blend</option>
+                    <option value="synthetic">Synthetic/Athletic</option>
+                    <option value="cashmere">Cashmere</option>
+                </select>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">What pattern type do you like?</label>
+                <select class="dropdown" id="pattern" required>
+                    <option value="">Select an option</option>
+                    <option value="solid">Solid Colors</option>
+                    <option value="stripes">Stripes</option>
+                    <option value="dots">Polka Dots</option>
+                    <option value="geometric">Geometric Patterns</option>
+                    <option value="fun">Fun/Novelty Designs</option>
+                    <option value="minimal">Minimal/Simple</option>
+                </select>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">What's your mood?</label>
+                <select class="dropdown" id="mood" required>
+                    <option value="">Select an option</option>
+                    <option value="energetic">Energetic & Active</option>
+                    <option value="calm">Calm & Relaxed</option>
+                    <option value="professional">Professional & Focused</option>
+                    <option value="playful">Playful & Fun</option>
+                    <option value="adventurous">Adventurous</option>
+                    <option value="cozy">Cozy & Comfortable</option>
+                </select>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit" class="submit-btn">Find My Socks</button>
+            </div>
+        </form>
+
+        <div class="result-section" id="resultSection">
+            <h2 class="result-title">Your Perfect Sock Match!</h2>
+            <p class="result-text" id="resultText"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>info@sockstory.com</p>
+            <p>+92 3338168650</p>
+            <p>123 Sock Street, lahore</p>
+            <p>Pakistan</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">📷</div>
+                <div class="social-icon">🐦</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
